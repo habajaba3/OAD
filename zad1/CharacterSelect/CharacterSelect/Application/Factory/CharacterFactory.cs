@@ -10,9 +10,10 @@ public static class CharacterFactory
     {
         return cls switch
         {
-            CharacterClass.Warrior => new Warrior(name ?? "Warrior"),
-            CharacterClass.Mage    => new Mage(name ?? "Mage"),
-            CharacterClass.Rogue   => new Rogue(name ?? "Rogue"),
+            CharacterClass.HanSuYeon => new HanSuYeon(name ?? "HanSuYeon"),
+            CharacterClass.YuJoonHyeok    => new YuJoonHyeok(name ?? "YuJoonHyeok"),
+            CharacterClass.Biyoo   => new Biyoo(name ?? "Biyoo"),
+            CharacterClass.KimDokJa   => new KimDokJa(name ?? "KimDokJa"),
             _ => throw new ArgumentOutOfRangeException(nameof(cls), "Nieznana klasa postaci.")
         };
     }
